@@ -1,0 +1,38 @@
+{
+  "name": "Seed2.0 Interactive Explainer",
+  "version": "1.0.0",
+  "description": "Interactive explainer for ByteDance's Seed2.0 frontier LLM family — benchmarks, pricing, capabilities, and production deployment at scale.",
+  "author": "jerrysoer",
+  "url": "https://jerrysoer.github.io/seed2-explainer",
+  "template": "comparison",
+  "subject": {
+    "name": "Seed2.0",
+    "provider": "ByteDance",
+    "type": "Large Language Model Family",
+    "tiers": ["Pro", "Lite", "Mini"],
+    "release": "July 2025"
+  },
+  "comparisons": [
+    { "model": "GPT-5.2", "provider": "OpenAI" },
+    { "model": "Claude Opus 4.5", "provider": "Anthropic" },
+    { "model": "Gemini-3-Pro", "provider": "Google" }
+  ],
+  "sections": [
+    { "id": "hero", "title": "The Quiet Disruption", "type": "hero" },
+    { "id": "benchmarks", "title": "The Scoreboard", "type": "comparison" },
+    { "id": "pricing", "title": "The Price Gap", "type": "calculator" },
+    { "id": "model-family", "title": "Three Tiers, One Architecture", "type": "tabbed" },
+    { "id": "capabilities", "title": "Beyond Text", "type": "expandable-grid" },
+    { "id": "production", "title": "Battle-Tested at Billion Scale", "type": "scrollytelling" },
+    { "id": "achievements", "title": "Gold Standard", "type": "radar-chart" },
+    { "id": "implications", "title": "What This Means For You", "type": "scenario-tabs" }
+  ],
+  "keyStats": {
+    "benchmarksLed": "4 of 6",
+    "costAdvantage": "~10x cheaper than Claude Opus",
+    "productionScale": "100M+ DAU via Doubao",
+    "competitionsWon": "IMO Gold, CMO Gold, ICPC 1st, Putnam 1st"
+  },
+  "dataSource": "Seed2.0 Technical Report (July 2025)",
+  "builtWith": "unpack.click"
+}

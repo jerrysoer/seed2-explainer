@@ -180,7 +180,16 @@ export default function RootLayout({
         className={`${newsreader.variable} ${dmSans.variable} ${jetbrainsMono.variable} antialiased`}
       >
         {children}
-        <img src="https://scrolly.to/pixel?s=oss&e=5b9b7eb5-6080-4376-9f01-c3438017596a&v=1" width={1} height={1} style={{position:'absolute',bottom:0,left:0,opacity:0,pointerEvents:'none'}} alt="" loading="lazy" decoding="async" />
+        {/* Scrolly analytics — privacy-friendly: no cookies, no PII, no cross-site tracking */}
+        <img
+          src="https://scrolly.to/pixel?s=oss&e=5b9b7eb5-6080-4376-9f01-c3438017596a&v=1&n=Seed2.0+by+ByteDance&u=https%3A%2F%2Fjerrysoer.github.io%2Fseed2-explainer"
+          width={1}
+          height={1}
+          style={{ position: 'absolute', bottom: 0, left: 0, opacity: 0, pointerEvents: 'none' }}
+          alt=""
+          loading="lazy"
+          decoding="async"
+        />
       </body>
     </html>
   );

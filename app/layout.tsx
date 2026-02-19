@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Newsreader, DM_Sans, JetBrains_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const newsreader = Newsreader({
@@ -172,13 +173,7 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        {process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID && (
-          <script
-            defer
-            src="https://cloud.umami.is/script.js"
-            data-website-id={process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID}
-          />
-        )}
+        <Script defer src="https://cloud.umami.is/script.js" data-website-id="2ae605db-85da-46d9-ad96-b28d1cb93ec2" />
       </head>
       <body
         suppressHydrationWarning

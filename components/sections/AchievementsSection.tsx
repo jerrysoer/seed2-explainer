@@ -9,7 +9,7 @@ import {
   ResponsiveContainer,
   Legend,
 } from "recharts";
-import { SectionWrapper } from "@/components/base";
+import { SectionWrapper, GeneratedImage } from "@/components/base";
 import { achievements, radarData } from "@/data/achievements";
 
 const MODEL_COLORS = {
@@ -58,6 +58,15 @@ export default function AchievementsSection() {
           GPT-5.2 and Claude Opus — and where it earns gold at the world&apos;s
           most demanding competitions.
         </p>
+      </div>
+
+      {/* Achievement Medals */}
+      <div className="mb-8">
+        <GeneratedImage
+          src="/seed2-explainer/generated/achievement-medals-final.png"
+          alt="Gold medals from IMO 2025, CMO 2025, and ICPC competitions"
+          className="rounded-xl shadow-sm"
+        />
       </div>
 
       {/* Radar chart */}

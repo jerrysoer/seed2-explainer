@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { Brain, Eye, Video, FileText, Wrench, FlaskConical, LucideIcon, ChevronDown, ChevronUp } from "lucide-react";
-import { SectionWrapper } from "@/components/base";
+import { SectionWrapper, GeneratedImage } from "@/components/base";
 import { capabilities, Capability } from "@/data/capabilities";
 
 const iconMap: Record<string, LucideIcon> = {
@@ -134,6 +134,16 @@ export default function CapabilitiesSection() {
         Seed2.0 is a natively multimodal model — it processes text, images, video, and documents
         in a single unified system, with tool use built in from the ground up.
       </p>
+
+      {/* Capabilities Visualization */}
+      <div className="mt-8 mb-2">
+        <GeneratedImage
+          src="/seed2-explainer/generated/capabilities-constellation.png"
+          fallback="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=1200&q=80&auto=format"
+          alt="Six capability domains of Seed2.0: reasoning, vision, video, documents, tools, and science"
+          className="rounded-xl border border-border shadow-sm"
+        />
+      </div>
 
       {/* 6-card grid */}
       <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2">

@@ -1,6 +1,7 @@
 "use client";
 
 import ScrollySection from "@/components/shared/ScrollySection";
+import { GeneratedImage } from "@/components/base";
 import { pipelineSteps, labVsProduction, productionStats } from "@/data/production";
 
 // Extra context copy keyed by pipeline step id
@@ -186,6 +187,16 @@ export default function ProductionSection() {
               </p>
             </div>
           ))}
+        </div>
+
+        {/* Production Scale Visualization */}
+        <div className="mt-8">
+          <GeneratedImage
+            src="/seed2-explainer/generated/production-scale.png"
+            fallback="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&q=80&auto=format"
+            alt="Visualization of Seed2.0 production scale across hundreds of millions of users"
+            className="rounded-xl border border-border shadow-sm"
+          />
         </div>
       </div>
 

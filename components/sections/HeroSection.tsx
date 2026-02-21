@@ -11,12 +11,24 @@ const stats = [
 
 export default function HeroSection() {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [isDark, setIsDark] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveIndex((prev) => (prev + 1) % stats.length);
     }, 3000);
     return () => clearInterval(interval);
+  }, []);
+
+  useEffect(() => {
+    const checkTheme = () => {
+      const theme = document.documentElement.getAttribute('data-theme');
+      setIsDark(theme === 'dark');
+    };
+    checkTheme();
+    const observer = new MutationObserver(checkTheme);
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+    return () => observer.disconnect();
   }, []);
 
   const scrollToNext = () => {
@@ -27,6 +39,13 @@ export default function HeroSection() {
     <section
       id="hero"
       className="relative flex min-h-screen flex-col items-center justify-center px-4 sm:px-6"
+      style={{
+        backgroundImage: isDark
+          ? 'linear-gradient(rgba(15, 15, 15, 0.92), rgba(15, 15, 15, 0.95)), url(/seed2-explainer/generated/hero-bg.png)'
+          : 'linear-gradient(rgba(255, 245, 230, 0.92), rgba(255, 245, 230, 0.95)), url(/seed2-explainer/generated/hero-bg.png)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
     >
       <div className="mx-auto max-w-3xl text-center">
         {/* Analogy opener */}

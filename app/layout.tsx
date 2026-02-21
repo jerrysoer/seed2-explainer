@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     siteName: "Seed2.0 Explainer",
     images: [
       {
-        url: "/og-image.png",
+        url: "/generated/og-image.png",
         width: 1200,
         height: 630,
         alt: "Seed2.0 — ByteDance's Frontier LLM Interactive Explainer",
@@ -72,7 +72,7 @@ export const metadata: Metadata = {
     title: "Seed2.0 — ByteDance's Frontier LLM at 1/10th the Cost",
     description:
       "Interactive explainer: benchmarks, pricing, and capabilities of ByteDance's new frontier model family.",
-    images: ["/og-image.png"],
+    images: ["/generated/og-image.png"],
   },
   robots: {
     index: true,

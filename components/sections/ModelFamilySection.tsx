@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { Check } from "lucide-react";
-import { SectionWrapper } from "@/components/base";
+import { SectionWrapper, GeneratedImage } from "@/components/base";
 import { modelTiers, type ModelTier } from "@/data/models";
 
 type TierId = "pro" | "lite" | "mini";
@@ -121,6 +121,15 @@ export default function ModelFamilySection() {
           ByteDance ships one coherent model family. Every tier shares the same underlying
           architecture — but is tuned for a distinct point on the cost-vs-capability curve.
         </p>
+      </div>
+
+      {/* Model Architecture Diagram */}
+      <div className="mb-8">
+        <GeneratedImage
+          src="/seed2-explainer/generated/model-architecture-final.png"
+          alt="Seed2.0 model architecture showing Pro, Lite, and Mini tiers"
+          className="rounded-xl border border-border shadow-sm"
+        />
       </div>
 
       {/* Tab buttons */}

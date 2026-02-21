@@ -1,0 +1,100 @@
+style:
+  base: "editorial illustration, warm atmospheric lighting, paper texture overlay, shallow depth of field"
+  palette: "warm cream (#FFF5E6), steel blue (#4A90D9), burnt orange (#E8734A), deep purple (#7C5CBF), sage green (#4CAF50), golden amber (#F5A623)"
+  mood: "sophisticated editorial like The Economist or NYT Magazine, warm & inviting yet authoritative, not technical/corporate"
+
+assets:
+  # ═══════════════════════════════════════════════════════════════
+  # 1. STYLE ANCHOR — Generated FIRST to establish visual cohesion
+  # ═══════════════════════════════════════════════════════════════
+  - id: style-anchor
+    type: image
+    model: nano-banana-pro
+    prompt: "Abstract composition of floating geometric seed pods transforming into digital neural networks. Warm cream (#FFF5E6) paper-textured background with soft atmospheric lighting. Steel blue (#4A90D9) and burnt orange (#E8734A) gradient flows connecting organic seed forms to crystalline AI architecture. Shallow depth of field with bokeh. Editorial illustration style — The Economist meets Wired, sophisticated not textbook. Hand-drawn quality with digital polish."
+    size: "2K"
+    aspectRatio: "16:9"
+    use_as_reference: true
+    fallback: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1600&q=80&auto=format"
+
+  # ═══════════════════════════════════════════════════════════════
+  # 2. HERO SECTION — High-impact first impression
+  # ═══════════════════════════════════════════════════════════════
+  - id: hero-bg
+    type: image
+    model: nano-banana-pro
+    prompt: "Wide editorial hero image: elegant seed pod cross-section transforming into luminous AI architecture. Left side shows organic seed interior with warm amber (#F5A623) glow, right side transitions to geometric neural network in steel blue (#4A90D9). Warm cream (#FFF5E6) atmospheric background with paper texture. Soft volumetric lighting creating depth. Magazine cover quality, Michelin guide meets tech editorial. 16:9 landscape."
+    size: "2K"
+    aspectRatio: "16:9"
+    section: "hero"
+    fallback: "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=1600&q=80&auto=format"
+
+  # ═══════════════════════════════════════════════════════════════
+  # 3. MODEL ARCHITECTURE DIAGRAM — Pro/Lite/Mini comparison
+  # ═══════════════════════════════════════════════════════════════
+  - id: model-architecture
+    type: image
+    model: nano-banana-flash
+    prompt: "Infographic diagram showing three tiered seed pods of different sizes (large/medium/small) transforming into three neural network crystals of proportional complexity. Labels: 'Pro' (steel blue #4A90D9), 'Lite' (burnt orange #E8734A), 'Mini' (sage green #4CAF50). Warm cream background. Clean editorial infographic style, not textbook diagram. Subtle connecting flow lines showing shared architecture. Side view cutaway revealing internal structure complexity differences. The Economist infographic aesthetic."
+    size: "2K"
+    aspectRatio: "16:9"
+    section: "model-family"
+    fallback: null
+
+  # ═══════════════════════════════════════════════════════════════
+  # 4. CAPABILITIES CONSTELLATION — Multimodal visual
+  # ═══════════════════════════════════════════════════════════════
+  - id: capabilities-constellation
+    type: image
+    model: nano-banana-pro
+    prompt: "Constellation-style diagram on warm cream (#FFF5E6) background showing six connected capability nodes: brain icon (steel blue), eye icon (sage green), video icon (burnt orange), document icon (golden amber), wrench icon (deep purple), flask icon (steel blue). Subtle golden connecting lines forming network. Each icon as luminous orb with soft glow. Flat editorial illustration, magazine infographic aesthetic. Overhead view, gentle shadows, sophisticated and clean."
+    size: "2K"
+    aspectRatio: "16:9"
+    section: "capabilities"
+    fallback: "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=1200&q=80&auto=format"
+
+  # ═══════════════════════════════════════════════════════════════
+  # 5. PRODUCTION SCALE VISUAL — Doubao app context
+  # ═══════════════════════════════════════════════════════════════
+  - id: production-scale
+    type: image
+    model: nano-banana-pro
+    prompt: "Aerial view illustration of vast field of luminous seed pods (representing 100M+ users), each glowing with soft steel blue (#4A90D9) and amber (#F5A623) light, connected by delicate golden threads forming massive network. Warm cream atmospheric haze. One central crystalline structure (ByteDance Doubao) radiating connections. Editorial illustration evoking scale without overwhelming detail. NYT Magazine visual style, elegant and informative."
+    size: "2K"
+    aspectRatio: "16:9"
+    section: "production"
+    fallback: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&q=80&auto=format"
+
+  # ═══════════════════════════════════════════════════════════════
+  # 6. ACHIEVEMENT MEDALS — IMO/CMO visual
+  # ═══════════════════════════════════════════════════════════════
+  - id: achievement-medals
+    type: image
+    model: nano-banana-flash
+    prompt: "Elegant still-life composition of three gold medals on warm cream (#FFF5E6) linen surface. Front medal engraved with 'IMO 2025 Gold', second with 'CMO 2025 Gold', third with 'ICPC Rank 1'. Medals in rich golden amber (#F5A623) with subtle mathematical symbols embossed. Soft side lighting creating sophisticated shadows. Editorial product photography, Kinfolk magazine aesthetic. Shallow depth of field, warm atmospheric. No hands, just medals."
+    size: "1K"
+    aspectRatio: "4:3"
+    section: "achievements"
+    fallback: null
+
+  # ═══════════════════════════════════════════════════════════════
+  # 7. BENCHMARK PODIUM — Performance comparison
+  # ═══════════════════════════════════════════════════════════════
+  - id: benchmark-podium
+    type: image
+    model: nano-banana-flash
+    prompt: "Elegant podium illustration showing Seed2.0 Pro in first place. Three geometric pedestals of different heights on warm cream (#FFF5E6) platform. Gold-tinted top podium (steel blue #4A90D9) with subtle '4 of 6' inscription. Silver/bronze pedestals beside it in muted tones. Soft shadows, editorial illustration style. Minimal, sophisticated, The Economist visual language. No people, just abstract geometric forms suggesting competition ranking."
+    size: "1K"
+    aspectRatio: "4:3"
+    section: "benchmarks"
+    fallback: null
+
+  # ═══════════════════════════════════════════════════════════════
+  # 8. OG IMAGE — Social sharing card
+  # ═══════════════════════════════════════════════════════════════
+  - id: og-image
+    type: image
+    model: nano-banana-pro
+    prompt: "Social media card design 1200x630px. Left half: elegant seed pod cross-section transforming into neural network crystal in steel blue (#4A90D9) and burnt orange (#E8734A) on warm cream (#FFF5E6) background. Right half: bold Newsreader serif text 'The Quiet Disruption' with subtitle 'ByteDance Seed2.0 matched frontier models at 10x lower cost'. Small 'scrolly.to' branding bottom-right. Editorial magazine cover aesthetic, sophisticated not corporate."
+    aspectRatio: "1200:630"
+    size: "2K"
+    fallback: null

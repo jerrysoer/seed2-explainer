@@ -33,7 +33,7 @@ assets:
   # ═══════════════════════════════════════════════════════════════
   - id: model-architecture
     type: image
-    model: nano-banana-flash
+    model: nano-banana-pro
     prompt: "Infographic diagram showing three tiered seed pods of different sizes (large/medium/small) transforming into three neural network crystals of proportional complexity. Labels: 'Pro' (steel blue #4A90D9), 'Lite' (burnt orange #E8734A), 'Mini' (sage green #4CAF50). Warm cream background. Clean editorial infographic style, not textbook diagram. Subtle connecting flow lines showing shared architecture. Side view cutaway revealing internal structure complexity differences. The Economist infographic aesthetic."
     size: "2K"
     aspectRatio: "16:9"
@@ -69,7 +69,7 @@ assets:
   # ═══════════════════════════════════════════════════════════════
   - id: achievement-medals
     type: image
-    model: nano-banana-flash
+    model: nano-banana-pro
     prompt: "Elegant still-life composition of three gold medals on warm cream (#FFF5E6) linen surface. Front medal engraved with 'IMO 2025 Gold', second with 'CMO 2025 Gold', third with 'ICPC Rank 1'. Medals in rich golden amber (#F5A623) with subtle mathematical symbols embossed. Soft side lighting creating sophisticated shadows. Editorial product photography, Kinfolk magazine aesthetic. Shallow depth of field, warm atmospheric. No hands, just medals."
     size: "1K"
     aspectRatio: "4:3"
@@ -81,7 +81,7 @@ assets:
   # ═══════════════════════════════════════════════════════════════
   - id: benchmark-podium
     type: image
-    model: nano-banana-flash
+    model: nano-banana-pro
     prompt: "Elegant podium illustration showing Seed2.0 Pro in first place. Three geometric pedestals of different heights on warm cream (#FFF5E6) platform. Gold-tinted top podium (steel blue #4A90D9) with subtle '4 of 6' inscription. Silver/bronze pedestals beside it in muted tones. Soft shadows, editorial illustration style. Minimal, sophisticated, The Economist visual language. No people, just abstract geometric forms suggesting competition ranking."
     size: "1K"
     aspectRatio: "4:3"

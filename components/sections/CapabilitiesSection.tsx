@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { Brain, Eye, Video, FileText, Wrench, FlaskConical, LucideIcon, ChevronDown, ChevronUp } from "lucide-react";
-import SectionWrapper from "@/components/shared/SectionWrapper";
+import { SectionWrapper } from "@/components/base";
 import { capabilities, Capability } from "@/data/capabilities";
 
 const iconMap: Record<string, LucideIcon> = {

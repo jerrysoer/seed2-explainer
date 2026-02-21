@@ -9,7 +9,7 @@ import {
   ResponsiveContainer,
   Legend,
 } from "recharts";
-import SectionWrapper from "@/components/shared/SectionWrapper";
+import { SectionWrapper } from "@/components/base";
 import { achievements, radarData } from "@/data/achievements";
 
 const MODEL_COLORS = {

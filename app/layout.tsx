@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Newsreader, DM_Sans, JetBrains_Mono } from "next/font/google";
 import Script from "next/script";
+import { ProgressBar } from "@/components/base";
 import "./globals.css";
 
 const newsreader = Newsreader({
@@ -179,6 +180,7 @@ export default function RootLayout({
         suppressHydrationWarning
         className={`${newsreader.variable} ${dmSans.variable} ${jetbrainsMono.variable} antialiased`}
       >
+        <ProgressBar />
         {children}
         {/* Scrolly engagement tracking — privacy-friendly: no cookies, no PII */}
         <Script

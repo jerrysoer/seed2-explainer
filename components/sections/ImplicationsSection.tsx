@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { Rocket, Scale, TrendingDown, LucideIcon } from "lucide-react";
-import SectionWrapper from "@/components/shared/SectionWrapper";
+import { SectionWrapper } from "@/components/base";
 import { scenarios, takeawayStats } from "@/data/implications";
 
 const ICON_MAP: Record<string, LucideIcon> = {

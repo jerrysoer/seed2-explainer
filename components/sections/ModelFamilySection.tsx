@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { Check } from "lucide-react";
-import SectionWrapper from "@/components/shared/SectionWrapper";
+import { SectionWrapper } from "@/components/base";
 import { modelTiers, type ModelTier } from "@/data/models";
 
 type TierId = "pro" | "lite" | "mini";

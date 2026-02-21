@@ -11,8 +11,7 @@ import {
   ResponsiveContainer,
   Cell,
 } from "recharts";
-import SectionWrapper from "@/components/shared/SectionWrapper";
-import JargonTerm from "@/components/shared/JargonTerm";
+import { SectionWrapper, JargonTerm } from "@/components/base";
 import {
   benchmarks,
   benchmarkCategories,
@@ -129,19 +128,27 @@ export default function BenchmarkSection() {
           <JargonTerm
             term="MMLU-Pro"
             definition="Massive Multitask Language Understanding (Pro edition). Tests broad knowledge across 57 subjects including STEM, humanities, and social sciences."
-          />,{" "}
+          >
+            MMLU-Pro
+          </JargonTerm>,{" "}
           <JargonTerm
             term="AIME"
             definition="American Invitational Mathematics Examination. A prestigious math competition that serves as a qualifier for the USA Mathematical Olympiad."
-          />,{" "}
+          >
+            AIME
+          </JargonTerm>,{" "}
           <JargonTerm
             term="Codeforces Elo"
             definition="A competitive programming rating system. Ratings above 2400 are 'International Grandmaster' level. Seed2.0 Pro's 3020 would rank among the top human competitors."
-          />, and{" "}
+          >
+            Codeforces Elo
+          </JargonTerm>, and{" "}
           <JargonTerm
             term="SWE-Bench"
             definition="Software Engineering Benchmark. Tests whether AI can solve real GitHub issues from popular open-source projects — a proxy for real-world coding ability."
-          />.
+          >
+            SWE-Bench
+          </JargonTerm>.
         </p>
       </div>
 

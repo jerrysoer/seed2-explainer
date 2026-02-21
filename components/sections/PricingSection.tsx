@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import SectionWrapper from "@/components/shared/SectionWrapper";
+import { SectionWrapper } from "@/components/base";
 import {
   pricingData,
   calculatorModels,
